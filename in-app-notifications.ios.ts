@@ -13,12 +13,7 @@ export class InAppNotifications implements CommonInAppNotifications {
 		if (InAppNotifications.instance) {
 			throw new Error("Error: Instance failed: Use InAppNotifications.getInstance() instead of new.");
 		}
-		InAppNotifications.instance = this;
-
-		// const queue = ios.getter(NSOperationQueue, NSOperationQueue.mainQueue);
-		// this.deepLinkObserver = NSNotificationCenter.defaultCenter.addObserverForNameObjectQueueUsingBlock(EBBannerViewDidClick, undefined, queue, () => {
-		// 	this.tapHandler();
-		// });
+		InAppNotifications.instance = this; 
 	}
 
 	static getInstance() {
@@ -27,16 +22,7 @@ export class InAppNotifications implements CommonInAppNotifications {
 
 	public showNotification(message: string, timeText: string, tapHandler: () => void): void {
 		this.tapHandler = tapHandler;
-        // EBForeNotification.setBannerViewTimeText(timeText);
-        // EBForeNotification.handleRemoteNotificationSoundIDIsIos10
-        // (
-			// {"aps": {"alert":message} },
-			// 1312,	/* 1312 is the default push notification sound on iOS */
-			// true
-        // );
-
-		let notification = BSForegroundNotification.init({});
-		// let notification = BSForegroundNotification.titleLabelSubtitleLabelCategoryIdentifier("title", "subtitle", "category");
+		let notification = new BSForegroundNotification(); 
 		notification.presentNotification();
 	}
 }
