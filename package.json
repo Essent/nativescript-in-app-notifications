@@ -11,6 +11,7 @@
   },
   "scripts": {
     "build": "tsc",
+    "build.demo": "tsc demo/app/*.ts",
     "dev.ios": "npm run preparedemo && npm run reset.ios && cd demo && tns emulate ios",
     "dev.android": "npm run preparedemo && npm run reset.android && cd demo && tns run android",
     "reset.ios": "cd demo && tns platform remove ios && tns platform add ios",
