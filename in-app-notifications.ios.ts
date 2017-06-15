@@ -8,7 +8,7 @@ export class InAppNotifications implements CommonInAppNotifications {
 
 	constructor() {
 		if (InAppNotifications.instance) {
-			throw new Error("Error: Instance failed: Use InAppNotifications.getInstance() instead of new.");
+			throw new Error('Error: Instance failed: Use InAppNotifications.getInstance() instead of new.');
 		}
 		InAppNotifications.instance = this; 
 	}
@@ -17,15 +17,16 @@ export class InAppNotifications implements CommonInAppNotifications {
 		return InAppNotifications.instance;
 	}
 
-	public showNotification(message: string, title: string, tapHandler: () => void, sound: string = ""): void {
-		const params = {"aps": {
-			"category": "",
-			"alert": {
-				"body": message,
-				"title": title
-			},
-			"sound": sound
-		}
+	public showNotification(message: string, title: string, tapHandler: () => void, sound: string = ''): void {
+		const params = {
+			'aps': {
+				'category': '',
+				'alert': {
+					'body': message,
+					'title': title
+				},
+				'sound': sound
+			}
 		};
 		let notification = new BSForegroundNotification();
 		notification.presentNotificationWithUserInfoCompletion(params, tapHandler);
