@@ -11,7 +11,7 @@ export class AppComponent {
     public constructor() { }
 
     public showNotification(): void {
-        InAppNotifications.getInstance().showNotification('This is a notification', '', () => {
+        InAppNotifications.getInstance().showNotification('This is a notification', 'This is the title', () => {
             console.log('tap');
         });
     }

@@ -15,7 +15,7 @@ export class InAppNotifications implements CommonInAppNotifications {
 		return InAppNotifications.instance;
 	}
 
-	public showNotification(message: string, timeText: string, tapHandler: () => void): void {
+	public showNotification(message: string, title: string, tapHandler: () => void, sound?: string): void {
 		// no Android implementation yet
 	}
 

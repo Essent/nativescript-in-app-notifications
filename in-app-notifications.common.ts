@@ -1,3 +1,3 @@
 export interface CommonInAppNotifications {
-    showNotification(message: string, timeText: string, tapHandler: () => void): void;
+    showNotification(message: string, title: string, tapHandler: () => void, sound?: string): void;
 }
