@@ -31,3 +31,9 @@ To try the demo run the following commands:
 npm run setup
 npm run dev.ios
 ```
+
+If you change files in the demo project and want to run the app again:
+```sh
+npm run build.demo
+npm run dev.ios
+```
