@@ -1,4 +1,4 @@
-pod 'BSForegroundNotification', :git => 'https://github.com/Essent/ForegroundNotification.git', :tag => '3.0-alpha'
+pod 'BSForegroundNotification', :git => 'https://github.com/Essent/ForegroundNotification.git', :tag => '3.0-alpha2'
 
 post_install do |installer|
   installer.pods_project.targets.each do |target|
