@@ -1,6 +1,6 @@
 {
   "name": "nativescript-in-app-notifications",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "In app notifications plugin for NativeScript.",
   "main": "in-app-notifications",
   "typings": "index.d.ts",
