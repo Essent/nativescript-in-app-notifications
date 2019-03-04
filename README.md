@@ -1,6 +1,6 @@
 # NativeScript In App Notifications plugin
 
-This is a plugin to show in app notifications on iOS, using [BSForegroundNotification](https://github.com/Essent/ForegroundNotification/tree/3.0-alpha) v3.0-alpha).
+This is a plugin to show in app notifications on iOS, using [BSForegroundNotification](https://github.com/Essent/ForegroundNotification/tree/3.1) v3.1).
 
 ## Demo
 

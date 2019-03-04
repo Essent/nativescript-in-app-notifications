@@ -5,24 +5,11 @@
 //	compile 'com.android.support:recyclerview-v7:+'
 //}
 
-android {
-  defaultConfig {
+android {  
+  defaultConfig {  
     generatedDensities = []
-    applicationId = "org.nativescript.demo"
-  }
-  aaptOptions {
-    additionalParameters "--no-version-vectors"
-  }
-}
-
-dependencies {
-
-    def suppotVer = "24.2.1";
-
-    if(project.hasProperty("supportVersion")) {
-        suppotVer = supportVersion
-    }
-
-    compile "com.android.support:appcompat-v7:$suppotVer"
-    compile "com.android.support:design:$suppotVer"
-}
+  }  
+  aaptOptions {  
+    additionalParameters "--no-version-vectors"  
+  }  
+} 
