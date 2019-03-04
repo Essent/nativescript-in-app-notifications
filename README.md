@@ -1,4 +1,5 @@
 # NativeScript In App Notifications plugin
+[![npm version](https://badge.fury.io/js/nativescript-in-app-notifications.svg)](https://www.npmjs.com/package/nativescript-in-app-notifications)
 
 This is a plugin to show in app notifications on iOS, using [BSForegroundNotification](https://github.com/Essent/ForegroundNotification/tree/3.1) v3.1).
 
@@ -13,7 +14,7 @@ Usage:
 1. Add the plugin to your project:
 
   ```ts
-  tns plugin add nativescript-in-app-notifications
+  npm install nativescript-in-app-notifications
   ```
 
 2. To show a notification call `showNotification`:
