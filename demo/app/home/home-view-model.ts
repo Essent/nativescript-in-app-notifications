@@ -1,9 +1,8 @@
-import { Observable } from 'tns-core-modules/data/observable';
+import { Observable } from "tns-core-modules/data/observable";
 import { InAppNotifications } from 'nativescript-in-app-notifications';
 
-export class HelloWorldModel extends Observable {
+export class HomeViewModel extends Observable {
     private inAppNotifications: InAppNotifications;
-
     constructor() {
         super();
     }
