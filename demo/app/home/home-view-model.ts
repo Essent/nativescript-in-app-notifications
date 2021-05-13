@@ -1,4 +1,4 @@
-import { Observable } from "tns-core-modules/data/observable";
+import { Observable } from "@nativescript/core";
 import { InAppNotifications } from 'nativescript-in-app-notifications';
 
 export class HomeViewModel extends Observable {
